@@ -165,6 +165,71 @@
 
         .btn-submit:hover { background: #083d75; transform: translateY(-2px); }
 
+        /* SECCIÓ SOBRE NOSALTRES */
+        .about {
+            padding: 100px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .highlight-item strong {
+            color: var(--primary);
+            min-width: 100px;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
         /* FOOTER */
         footer {
             background: var(--dark);
@@ -176,7 +241,9 @@
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .contact-grid { grid-template-columns: 1fr; padding: 2rem; }
+            .about-content { grid-template-columns: 1fr; padding: 2rem; }
             .hero h1 { font-size: 2.2rem; }
+            .about-text h2 { font-size: 1.8rem; }
             nav { display: none; } /* Simplificació per mobile */
         }
     </style>
@@ -188,6 +255,7 @@
         <nav>
             <ul>
                 <li><a href="#">Inici</a></li>
+                <li><a href="#sobre">Sobre Nosaltres</a></li>
                 <li><a href="#">Serveis</a></li>
                 <li><a href="#">Flota</a></li>
                 <li><a href="#contacte">Contacte</a></li>
@@ -199,6 +267,41 @@
         <section class="hero">
             <h1>Connectant la cadena alimentària amb eficiència</h1>
             <p>Experts en transport refrigerat i logística integral. Garantim que els teus productes arribin frescos, segurs i puntuals a la seva destinació.</p>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="section-header">
+                <h2>Sobre Nosaltres</h2>
+                <p>Més de 15 anys dedicats a la logística alimentària de qualitat.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Qui Som</h2>
+                    <p>FoodLogistic és una empresa especialitzada en logística alimentària amb més de 15 anys d'experiència en el sector. Nasqué amb la missió de revolucionar el transport de productes perecederos, garantint sempre la frescor i seguretat dels productes.</p>
+                    
+                    <p>El nostre equip està compost per professionals apaixonats per la logística, amb una visió clara: ser la millor solució logística alimentària a Catalunya i el sud d'Europa.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <strong>🏆 Missió:</strong>
+                            <span>Garantir que cada producte arribi amb la màxima qualitat i seguretat alimentària.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>🌿 Visió:</strong>
+                            <span>Ser el líder en logística refrigerada sostenible a Europa.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>💡 Valors:</strong>
+                            <span>Transparència, eficiència, responsabilitat i excel·lència en el servei.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556740722-97cbbf81b5d8?auto=format&fit=crop&q=80&w=800" alt="Equip de FoodLogistic">
+                </div>
+            </div>
         </section>
 
         <section id="contacte" class="contact">
