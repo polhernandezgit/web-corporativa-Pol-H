@@ -4,7 +4,7 @@ Aquesta és la web corporativa de [Nom de l'Empresa], una empresa fictícia dedi
 
 ## Demostració
 
-🌐 URL de la web(https://polhernandezgit.github.io/web-corporativa-Pol-H/)
+🌐 [URL de la web](https://polhernandezgit.github.io/web-corporativa-Pol-H/)
 
 ## Tecnologies Utilitzades
 
